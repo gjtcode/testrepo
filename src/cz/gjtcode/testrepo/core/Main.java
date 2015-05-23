@@ -11,6 +11,10 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Test");
 		System.out.println("App - START");
+		System.out.println("Application args (count: " + args.length + ")");
+		for (String argStr : args) {
+			System.out.println(" - " + argStr);
+		}
 		System.out.println("System properties: ");
 		final Properties properties = System.getProperties();
 		final Set<Object> propertyKeySet = properties.keySet();
